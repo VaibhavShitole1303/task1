@@ -118,31 +118,27 @@ public class converterActivity extends Activity implements View.OnClickListener{
 
             @Override
             public void onClick(View v) {
-                    int intAmount=Intent.parseIntent(EnterAmount.getText().toString());
-                convertedAmount.setText(intAmount*82);
+
 
             }
         });
         UK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int intAmount=Intent.parseIntent(EnterAmount.getText().toString());
-                convertedAmount.setText(intAmount*92);
+
 
             }
         });
         UAE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int intAmount=Intent.parseIntent(EnterAmount.getText().toString());
-                convertedAmount.setText(intAmount*92);
+
             }
         });
         China.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int intAmount=Intent.parseIntent(EnterAmount.getText().toString());
-                convertedAmount.setText(intAmount*89);
+
             }
         });
     }

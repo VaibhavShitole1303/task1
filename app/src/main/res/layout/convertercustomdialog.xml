@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/convertedAmount"
+        android:layout_width="144dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        android:text="ConvertedAmount"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/USA"
+        android:layout_width="93dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="104dp"
+        android:text="USA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertedAmount" />
+
+    <RadioButton
+        android:id="@+id/UK"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="100dp"
+        android:text="UK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/USA"
+        app:layout_constraintTop_toBottomOf="@+id/convertedAmount" />
+
+    <RadioButton
+        android:id="@+id/UAE"
+        android:layout_width="89dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="UAE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/USA" />
+
+    <RadioButton
+        android:id="@+id/China"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="China"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toEndOf="@+id/UAE"
+        app:layout_constraintTop_toBottomOf="@+id/UK" />
+</androidx.constraintlayout.widget.ConstraintLayout>

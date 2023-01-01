@@ -28,6 +28,7 @@ public class converterActivity extends Activity implements View.OnClickListener{
     EditText EnterAmount;
     Dialog dialog;
     RadioButton USA,UK,UAE,China;
+    String amount;
 
 
 
@@ -49,10 +50,8 @@ public class converterActivity extends Activity implements View.OnClickListener{
     private void SetExtraData() {
         Intent intent=getIntent();
         Bundle bundle=intent.getExtras();
-        String username=bundle.getString("username");
-        String phoneno=bundle.getString("phoneNo");
-        txtUsername.setText(username);
-        txtPhoneNo.setText(phoneno);
+        txtPhoneNo.setText(bundle.getString("phoneNo"));
+        txtUsername.setText(bundle.getString("username"));
 
     }
 
@@ -97,8 +96,16 @@ public class converterActivity extends Activity implements View.OnClickListener{
     }
 
     private void initview() {
+
         txtUsername=findViewById(R.id.txtUsername);
         txtPhoneNo=findViewById(R.id.txtPhoneNo);
+        currentDate=findViewById(R.id.currentDate);
+        currentTime=findViewById(R.id.currentTime);
+        btnCurrentDate=findViewById(R.id.btnCurrentDate);
+        btnCurrentTime=findViewById(R.id.btnCurrentTime);
+        btnConvert=findViewById(R.id.btnConvert);
+        EnterAmount=findViewById(R.id.EnterAmount);
+        amount=EnterAmount.getText().toString();
 
     }
     @Override

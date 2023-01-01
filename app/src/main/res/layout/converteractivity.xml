@@ -102,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/currentTime" />
 
     <Button
-        android:id="@+id/Convert"
+        android:id="@+id/btnConvert"
         android:layout_width="134dp"
         android:layout_height="63dp"
         android:layout_marginBottom="140dp"
